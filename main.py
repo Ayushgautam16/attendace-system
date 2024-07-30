@@ -74,13 +74,7 @@ while True:
                 thickness              = 3
                 lineType               = 2
  
-                cv2.putText(frame,name+' Present', 
-                    bottomLeftCornerOfText, 
-                    font, 
-                    fontScale,
-                    fontColor,
-                    thickness,
-                    lineType)
+              
  
                 if name in students:
                     students.remove(name)
