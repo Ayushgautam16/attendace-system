@@ -73,6 +73,14 @@ while True:
                 fontColor              = (255,0,0)
                 thickness              = 3
                 lineType               = 2
+
+               cv2.putText(frame,name+' Present', 
+                    bottomLeftCornerOfText, 
+                    font, 
+                    fontScale,
+                    fontColor,
+                    thickness,
+                    lineType)
  
               
  
