@@ -81,6 +81,21 @@ while True:
                     fontColor,
                     thickness,
                     lineType)
+
+
+     if name in students:
+                    students.remove(name)
+                    print(students)
+                    current_time = now.strftime("%H-%M-%S")
+                    lnwriter.writerow([name,current_time])
+    cv2.imshow("attendence system",frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+ 
+video_capture.release()
+cv2.destroyAllWindows()
+f.close()
+
  
               
  
